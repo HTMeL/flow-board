@@ -1,0 +1,14 @@
+# Flow Board
+
+> Flow Board is a simple Kanban board that runs entirely in the browser. Cards are stored in the browser's localStorage; there is no account, server or tracking.
+
+## What it does
+- Four columns: Backlog, In Progress, In Review, Done
+- Cards have a title, assignee, priority (High, Medium, Low) and due date
+- Move cards by drag and drop, by arrow buttons, or with the keyboard (N = new card, Enter = edit)
+- Search by title or assignee, filter by priority
+- Overdue and due-soon highlighting
+- Undo for deleted cards (10 seconds)
+- Export and import the board as JSON
+- Changes sync across open tabs
+- Built to WCAG 2.2 AA: keyboard operable, screen-reader labelled, light and dark themes

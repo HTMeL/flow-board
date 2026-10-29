@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow Board – Simple Kanban Board in Your Browser</title>
+    <meta
+      name="description"
+      content="Flow Board is a simple Kanban board with drag-and-drop, search, due-date alerts and JSON export. Private by design: your cards stay in your browser."
+    />
+    <meta name="theme-color" content="#3b5bdb" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Flow Board" />
+    <meta property="og:title" content="Flow Board – Simple Kanban Board in Your Browser" />
+    <meta
+      property="og:description"
+      content="Drag-and-drop Kanban with search, due-date alerts and JSON export. Your cards stay in your browser."
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Flow Board showing four columns: Backlog, In Progress, In Review and Done, with sample task cards."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flow Board – Simple Kanban Board in Your Browser" />
+    <meta
+      name="twitter:description"
+      content="Drag-and-drop Kanban with search, due-date alerts and JSON export. Your cards stay in your browser."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Flow Board",
+        "description": "A simple Kanban board with drag-and-drop, search, due-date alerts and JSON export. Data is stored locally in the browser.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any modern web browser",
+        "inLanguage": "en",
+        "featureList": [
+          "Four-column Kanban board: Backlog, In Progress, In Review, Done",
+          "Drag-and-drop and keyboard-accessible card moves",
+          "Search by title or assignee and filter by priority",
+          "Overdue and due-soon highlighting",
+          "Undo for deleted cards",
+          "JSON export and import",
+          "Data stays in your browser; no account required"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Static content for crawlers and no-JS clients; React replaces it on load. -->
+    <div id="root">
+      <main class="prerender">
+        <h1>Flow Board</h1>
+        <p>
+          Flow Board is a simple Kanban board that runs in your browser. Organise work across four
+          columns: Backlog, In Progress, In Review and Done.
+        </p>
+        <h2>Features</h2>
+        <ul>
+          <li>Drag and drop cards, or move them with buttons and the keyboard</li>
+          <li>Search by title or assignee and filter by priority</li>
+          <li>Overdue and due-soon highlighting</li>
+          <li>Undo for deleted cards</li>
+          <li>Export and import your board as JSON</li>
+          <li>No account needed: your cards are saved in your browser and never leave your device</li>
+        </ul>
+        <noscript><p>Flow Board needs JavaScript enabled to run.</p></noscript>
+      </main>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
